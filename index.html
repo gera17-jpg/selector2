@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combinator Selector</title>
+  <style>
+    div p{
+      color: violet;
+    }
+    div>p{
+      font-size:45px;
+    }
+    div+p{
+      color:blue;
+      font-size:20px;
+    }
+    div~p{
+      text-decoration:underline;
+    }
+  
+  </style>
+</head>
+<body>
+    <div></div>
+    <p>Under 1st div</p>
+    <section></section>
+    <p>under 1st section</p>
+    <div>
+      <section>
+        <p>inside section that is inside the 2nd div</p>
+      </section>
+      <p>inside 2nd div</p>
+    </div>
+      <section>
+        <div>inside the last section</div>
+      </section>
+      <p>under the last section</p>
+</body>
+</html>
